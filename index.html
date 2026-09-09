@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo demonstrativo PULSE de suplementos para treino: proteínas, creatinas e pré-treinos.">
+  <title>PULSE | Catálogo de suplementos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a href="#catalogo">Pular para o catálogo</a>
+
+  <header class="cabecalho">
+    <a class="logo" href="#inicio" aria-label="PULSE — início">PULSE®</a>
+    <p>Nutrição esportiva</p>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#proteinas">Proteínas</a></li>
+        <li><a href="#creatinas">Creatinas</a></li>
+        <li><a href="#pre-treinos">Pré-treinos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="apresentacao" aria-labelledby="titulo-principal">
+      <p>Seu próximo nível começa aqui</p>
+      <h1 id="titulo-principal">Movido pela constância.</h1>
+      <p>Suplementos para acompanhar o ritmo do seu treino.</p>
+      <a href="#catalogo">Explorar catálogo</a>
+    </section>
+
+    <section id="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo">Sua rotina. Sua escolha.</h2>
+      <p>Catálogo demonstrativo. Produtos e preços ilustrativos, sem venda ou pagamento.</p>
+
+      <div id="controles-catalogo" class="controles-catalogo" hidden>
+        <div class="campo-busca">
+          <label for="busca-produto">Buscar suplemento</label>
+          <input
+            id="busca-produto"
+            type="search"
+            placeholder="Nome, sabor ou categoria"
+            autocomplete="off"
+            aria-controls="proteinas creatinas pre-treinos"
+          >
+        </div>
+
+        <div class="campo-categoria">
+          <label for="filtro-categoria">Categoria</label>
+          <select
+            id="filtro-categoria"
+            aria-controls="proteinas creatinas pre-treinos"
+          >
+            <option value="todos">Todas as categorias</option>
+            <option value="proteinas">Proteínas</option>
+            <option value="creatinas">Creatinas</option>
+            <option value="pre-treinos">Pré-treinos</option>
+          </select>
+        </div>
+
+        <button id="limpar-filtros" type="button">Limpar filtros</button>
+      </div>
+
+      <p
+        id="contador-produtos"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+        hidden
+      ></p>
+
+      <div id="sem-resultados" class="sem-resultados" hidden>
+        <h3>Nenhum suplemento encontrado</h3>
+        <p>Tente outro nome, altere a categoria ou use “Limpar filtros”.</p>
+      </div>
+
+      <section id="proteinas" aria-labelledby="titulo-proteinas">
+        <h3 id="titulo-proteinas">Proteínas</h3>
+
+        <div class="grade-produtos">
+          <article class="produto">
+            <!-- A imagem do produto será adicionada com os arquivos visuais. -->
+            <p class="etiqueta">Essencial</p>
+            <h4>Whey Protein — Chocolate</h4>
+            <p>Proteína do soro do leite em pó.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>900 g</dd>
+              <dt>Sabor</dt>
+              <dd>Chocolate</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 129,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes do Whey Chocolate</summary>
+              <p>Uma opção em pó para compor sua rotina alimentar. Produto demonstrativo; a composição do produto real deve ser consultada no rótulo.</p>
+            </details>
+          </article>
+
+          <article class="produto">
+            <p class="etiqueta">Linha premium</p>
+            <h4>Whey Isolado — Baunilha</h4>
+            <p>Proteína isolada do soro do leite em pó.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>900 g</dd>
+              <dt>Sabor</dt>
+              <dd>Baunilha</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 189,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes do Whey Isolado</summary>
+              <p>Versão ilustrativa de proteína isolada, sabor baunilha. Confira ingredientes e alergênicos no rótulo do produto real.</p>
+            </details>
+          </article>
+
+          <article class="produto">
+            <p class="etiqueta">Outro sabor</p>
+            <h4>Whey Protein — Morango</h4>
+            <p>Proteína do soro do leite em pó.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>900 g</dd>
+              <dt>Sabor</dt>
+              <dd>Morango</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 129,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes do Whey Morango</summary>
+              <p>Versão ilustrativa de whey protein, sabor morango. Confira a composição no rótulo do produto real.</p>
+            </details>
+          </article>
+
+          <article class="produto">
+            <p class="etiqueta">Vegetal</p>
+            <h4>Proteína Vegetal — Cacau</h4>
+            <p>Blend de proteínas de origem vegetal em pó.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>600 g</dd>
+              <dt>Sabor</dt>
+              <dd>Cacau</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 139,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes da Proteína Vegetal</summary>
+              <p>Produto demonstrativo à base de proteínas vegetais. Ingredientes e informações nutricionais dependem do produto real.</p>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section id="creatinas" aria-labelledby="titulo-creatinas">
+        <h3 id="titulo-creatinas">Creatinas</h3>
+
+        <div class="grade-produtos">
+          <article class="produto">
+            <p class="etiqueta">Rotina</p>
+            <h4>Creatina Mono</h4>
+            <p>Creatina monohidratada em pó.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>300 g</dd>
+              <dt>Sabor</dt>
+              <dd>Sem sabor</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 79,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes da Creatina Mono</summary>
+              <p>Apresentação demonstrativa de creatina monohidratada sem sabor. Consulte as informações do fabricante no produto real.</p>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section id="pre-treinos" aria-labelledby="titulo-pre-treinos">
+        <h3 id="titulo-pre-treinos">Pré-treinos</h3>
+
+        <div class="grade-produtos">
+          <article class="produto">
+            <p class="etiqueta">Pré-treino</p>
+            <h4>Pré-treino Focus</h4>
+            <p>Pré-treino em pó, sabor frutas vermelhas.</p>
+
+            <dl>
+              <dt>Conteúdo</dt>
+              <dd>300 g</dd>
+              <dt>Sabor</dt>
+              <dd>Frutas vermelhas</dd>
+            </dl>
+
+            <p class="preco"><strong>R$ 99,90</strong></p>
+
+            <details>
+              <summary>Ver detalhes do Pré-treino Focus</summary>
+              <p>Produto demonstrativo. A composição e as informações completas devem ser conferidas no rótulo do produto real.</p>
+            </details>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p><strong>PULSE®</strong> — Disciplina em cada escolha.</p>
+    <p><small>© 2026 PULSE. Catálogo demonstrativo de suplementos.</small></p>
+    <a href="#inicio">Voltar ao início</a>
+  </footer>
+</body>
+</html>
